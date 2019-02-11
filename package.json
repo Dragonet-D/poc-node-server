@@ -1,0 +1,37 @@
+{
+  "author": "lei wen peng",
+  "version": "0.0.1",
+  "description": "quick-start Node.js",
+  "engines": {
+    "node": ">= 8.10 <11"
+  },
+  "scripts": {
+    "dev": "nodemon /src/app.ts",
+    "build": "",
+    "jest-test": ""
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "@babel/register": "^7.0.0",
+    "@types/jest": "^24.0.0",
+    "@types/koa": "^2.0.48",
+    "@types/mongoose": "^5.3.12",
+    "@types/node": "^10.12.24",
+    "jest": "^24.1.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.0.8",
+    "koa-bodyparser": "3",
+    "koa-logger": "^3.2.0",
+    "koa-mongo": "^1.6.0",
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.4.11",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-microsoft-contrib": "^6.0.0",
+    "tsutils": "^3.8.0",
+    "typescript": "^3.3.3"
+  }
+}
