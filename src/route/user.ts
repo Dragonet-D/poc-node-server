@@ -27,10 +27,7 @@ class User implements UserInter {
   //     router.post("/getUser", (ctx, next) => {});
   //   }
   create(router, control) {
-    router.post("/create", koaBody(), async (ctx, next) => {
-      const request = ctx.request.body;
-      console.log("TCL: User -> create -> request", request);
-    });
+    router.post("/create", koaBody(), async (ctx, next) => {});
   }
 }
 

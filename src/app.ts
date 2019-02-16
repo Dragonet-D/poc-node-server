@@ -15,9 +15,9 @@ const server = new Koa();
 /**
  * apply middleWares
  */
-// server.use(mongo(mongoConfig));
+server.use(mongo(mongoConfig));
 server.use(logger());
-// server.use(bodyParser());
+server.use(bodyParser());
 server.use(router.routes());
 server.use(router.allowedMethods());
 

@@ -22,7 +22,17 @@ class Auth implements AuthInter {
     this.logout(router, control);
   }
   login(router, control) {
-    router.post("/login", async (ctx, next) => {});
+    router.post("/login", async (ctx, next) => {
+      const requestBody = ctx.request.body;
+      ctx.body = {
+        status: {
+          code: 200,
+          message: "Login successfully"
+        },
+        Token: "auth-token{placeholder}",
+        isValid: true
+      };
+    });
   }
   logout(router, control) {
     router.post("/logout", async (ctx, next) => {});
